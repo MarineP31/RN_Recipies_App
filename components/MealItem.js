@@ -23,9 +23,9 @@ const MealItem = props => {
             </ImageBackground>
           </View>
           <View style={{ ...styles.mealRow, ...styles.mealDetails }}>
-            <Text>{props.duration}m</Text>
-            <Text>{props.complexity.toUpperCase()}</Text>
-            <Text>{props.affordability.toUpperCase()}</Text>
+            <Text style={styles.text}>{props.duration}m</Text>
+            <Text style={styles.text}>{props.complexity.toUpperCase()}</Text>
+            <Text style={styles.text}>{props.affordability.toUpperCase()}</Text>
           </View>
         </View>
       </TouchableOpacity>
@@ -67,6 +67,9 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     paddingHorizontal: 10,
     textAlign: "center",
+  },
+  text: {
+    fontFamily: "open-sans",
   },
 });
 
